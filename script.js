@@ -15,12 +15,16 @@ function start(x) {
         }
 
         if (numAsk > x) {
-            console.log("Вы ввели число больше загаданного.")
+            alert("Вы ввели число больше загаданного.")
             askNum()
-        } else if (numAsk < x) {
-            console.log("Вы ввели число меньше загаданного.")
+        }
+
+        if (numAsk < x) {
+            alert("Вы ввели число меньше загаданного.")
             askNum()
-        } else if (numAsk == x) {
+        }
+
+        if (numAsk == x) {
             alert("Вы выиграли!")
         }
     }
